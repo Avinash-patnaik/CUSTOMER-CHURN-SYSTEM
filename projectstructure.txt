@@ -2,20 +2,21 @@ finance-churn-system/
 ├── .github/ 
 │   ├── sync_to_hf.yml
 ├── data/  
-├── logs/               # Empty (Data is streamed from HF Hub)
-├── models/             # Serialized .pkl or .onnx models
-├── notebooks/          # 01_Exploration, 02_Model_Selection (Experimentation only)
-├── src/                # Production scripts
+├── logs/               
+├── models/             
+├── notebooks/          
+├── src/                
 │   ├── __init__.py
-│   ├── data_loader.py  # Hugging Face Streaming logic
-│   ├── features.py     # Feature engineering & scaling
-│   ├── model_utils.py  # Training & Evaluation logic
-│   └── logger.py       # Custom logging for production tracking
+│   ├── ingestion.py  
+│   ├── preprocessing.py     
+│   ├── model_utils.py  
+│   └── evaluate.py      
 ├── app/
-│   ├── main.py         # FastAPI code
-│   └── ui.py           # Streamlit code
+│   ├── main.py         
+│   └── ui.py 
+├── tests/           
 ├── requirements.txt
 ├── .gitignore
 ├── .gitattributes
-├── Dockerfile          # For HF Spaces deployment
-└── README.md           # Your executive summary
+├── Dockerfile          
+└── README.md           
