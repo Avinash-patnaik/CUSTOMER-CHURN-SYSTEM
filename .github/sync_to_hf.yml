@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push -f https://Avi-1001:$HF_TOKEN@huggingface.co/spaces/Avi-1001/Avi-1001/Customer-churn-predictor main
+        run: git push -f https://Avi-1001:$HF_TOKEN@huggingface.co/spaces/Avi-1001/Customer-churn-predictor main
